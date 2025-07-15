@@ -1,12 +1,12 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'igh trit atsslat i disc clicker f yes muhim disc surprise hhhhhhh',
+        title: "Şarkıyı dinlemek istersen, 'Sen En İyisisin Anas' butonuna tıkla.",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
+        confirmButtonText: 'Sen En İyisisin Anas',
         cancelButtonText: 'No',
     }).then((result) => {
         if (result.isConfirmed) {

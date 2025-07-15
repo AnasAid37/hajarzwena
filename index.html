@@ -2,23 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <title>Happy Birthday!!! :)</title>
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-  <!-- My Style -->
-  <link rel="stylesheet" href="./style/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>Happy Birthday!!! :)</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <!-- My Style -->
+    <link rel="stylesheet" href="./style/main.css" />
 </head>
 
 <body>
+    <div class="background-image hidden"></div>
 
     <audio class="song" loop autoplay>
-        <source src="./music/Assala - Been Adeek  أصاله - بين ايديك.mp3" type="audio/mpeg">
+        <source src="music/bukl.mp3" type="audio/mpeg">
         </source>
         Your browser isn't invited for super fun audio time.
     </audio>
@@ -27,34 +28,39 @@
         <div class="one">
             <h1 class="one">
                 Ahlen
-                <span id="name">jamila</span>
+                <span id="name">zeynep</span>
             </h1>
-            <p class="two" id="greetingText">Nqin Saraha Tezza Dary Smiyt nm ☺️</p>
+            <p class="two" id="greetingText">Açıkçası ismini böyle çok seviyorum ☺️</p>
         </div>
 
         <div class="three">
-            <p>Ghassad iga wass dagh tlult !! :D</p>
+            <p>Böyle bir günde dünyaya gelmişsin... !! :D</p>
         </div>
 
         <div class="four">
             <div class="text-box">
                 <p class="hbd-chatbox">
-                Ewa asguass a mbarqi, aram tmnakh qulu may ifolkin gh dunitad ashqu tstah9at d kmin teezat hhhhhhhhhhhhh "happy birthday"🫶🏻
+                    O zaman doğum günün kutlu olsun.
+                    Bilmeni isterim ki, seni mutlu ve neşeli görmek beni de mutlu ediyor.
+                    İnşallah gönlünden geçen her şey gerçek olur, sadece bana güven hahaha 🫶🏻
+
+
+                    "🫶🏻
                 </p>
                 <p class="fake-btn">Send</p>
             </div>
         </div>
 
         <div class="five">
-            <p class="idea-1">Ghayad ad rikh adskerkh</p>
-            <p class="idea-2">Walaquen bidkh hhh</p>
+            <p class="idea-1">Yaptığım şey şu oldu...</p>
+            <p class="idea-2">durdum</p>
             <p class="idea-3">
-                Nikh yuf adskrkh kra igan khass
+                Dedim ki: Bu sefer senin için özel bir şey yapmalıyım.
+
             </p>
-            <p class="idea-4">Ashko</p>
+            <p class="idea-4">Çünkü</p>
             <p class="idea-5">
-                Kmin tgit special
-                <span>:)</span>
+                sen özelsin <span>:)</span>
             </p>
             <p class="idea-6">
                 <span>S</span>
@@ -63,11 +69,13 @@
         </div>
 
         <div class="six">
-            <img src="./img/irene.jpg" alt="profile" class="profile-picture" id="imagePath"/>
+            <img src="./img/irene1.jpg" alt="profile" class="profile-picture" id="imagePath" />
             <img src="img/hat.svg" alt="hat" class="hat" />
             <div class="wish">
                 <h3 class="wish-hbd">happy birthday</h3>
-                <h5 id="wishText">And allah bless you and protect you</h5>
+                <h5 id="wishText">Allah seni korusun ve gözetsin.
+
+                </h5>
             </div>
         </div>
 
@@ -147,10 +155,20 @@
     </div>
 
 </body>
-    <!-- Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <!-- Sweetalert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="application/javascript" src="./script/main.js"></script>
+<!-- Greensock -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<!-- Sweetalert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="application/javascript" src="./script/main.js"></script>
+<script>
+    window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.querySelector('.background-image').classList.add('show');
+  }, 5000); // تظهر بعد 5 ثواني
+});
+
+</script>
+
+
 
 </html>

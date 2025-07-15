@@ -2,13 +2,14 @@
 :root {
   --font-main: 'Poppins', sans-serif;
   --color-primary: #15a1ed;
-  --color-light: #fff;
-  --color-border: #aaa;
+  --color-light: #ffffff;
+  --color-border: #ccc;
   --spacing: 1rem;
   --radius: 5px;
   --font-large: 4.5rem;
   --font-medium: 3rem;
   --font-small: 1.2rem;
+  --text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
 }
 
 /* Reset & Base */
@@ -21,12 +22,41 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: rgb(10, 10, 10); /* خلفية سوداء */
   font-family: var(--font-main);
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  color: var(--color-light);
+  position: relative;
 }
 
+.background-image {
+  position: fixed;
+  inset: 0;
+  background-image: url('../img/Screenshot 2025-06-08 162807.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  z-index: 0;
+}
+
+.background-image.show {
+  opacity: 1;
+}
+
+/* Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* General hidden elements */
 .song,
 .container,
 .text-box span,
@@ -42,6 +72,7 @@ html, body {
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
+  z-index: 1;
 }
 
 .container > div {
@@ -52,9 +83,24 @@ html, body {
 }
 
 /* Typography */
-.one { font-size: var(--font-large); }
-.two { font-size: var(--font-small); font-weight: lighter; }
-.three { font-size: var(--font-medium); }
+.one {
+  font-size: var(--font-large);
+  color: var(--color-light);
+  text-shadow: var(--text-shadow);
+}
+
+.two {
+  font-size: var(--font-small);
+  font-weight: lighter;
+  color: var(--color-light);
+  text-shadow: var(--text-shadow);
+}
+
+.three {
+  font-size: var(--font-medium);
+  color: var(--color-light);
+  text-shadow: var(--text-shadow);
+}
 
 .four .text-box {
   border: 3px solid var(--color-border);
@@ -63,11 +109,17 @@ html, body {
   margin: 0 auto;
   padding: 10px;
   position: relative;
-  background-color: var(--color-light);
+  background-color: rgba(255, 255, 255, 0.08);
   text-align: left;
+  color: var(--color-light);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-.text-box p { margin: 0; }
+.text-box p {
+  margin: 0;
+  text-shadow: var(--text-shadow);
+}
 
 .text-box .fake-btn {
   position: absolute;
@@ -78,6 +130,7 @@ html, body {
   background-color: var(--color-primary);
   color: var(--color-light);
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(21, 161, 237, 0.5);
 }
 
 /* Five */
@@ -86,26 +139,34 @@ html, body {
   position: absolute;
   left: 0;
   right: 0;
+  color: var(--color-light);
+  text-shadow: var(--text-shadow);
 }
 
 .idea-3 strong {
   display: inline-block;
   border-radius: 3px;
   padding: 3px 5px;
+  text-shadow: var(--text-shadow);
 }
 
 .idea-5 {
   font-size: 4rem;
+  color: var(--color-light);
+  text-shadow: var(--text-shadow);
 }
 
 .idea-5 span,
 .idea-6 span,
 .wish-hbd span {
   display: inline-block;
+  text-shadow: var(--text-shadow);
 }
 
 .idea-6 span {
   font-size: 15rem;
+  color: var(--color-light);
+  text-shadow: var(--text-shadow);
 }
 
 /* Image Section */
@@ -118,6 +179,7 @@ html, body {
 .six img {
   height: 350px;
   max-width: 100%;
+  filter: brightness(1.1);
 }
 
 .six .hat {
@@ -138,7 +200,8 @@ html, body {
 .baloons img:nth-child(3n+0) { left: 30%; }
 
 /* Sections */
-.seven, .eight {
+.seven,
+.eight {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -166,23 +229,31 @@ html, body {
   font-size: 3em;
   margin: 0;
   text-transform: uppercase;
+  color: var(--color-light);
+  text-shadow: var(--text-shadow);
 }
 
 .wish h5 {
   font-size: 2rem;
   font-weight: lighter;
   margin: 10px 0 0;
+  color: var(--color-light);
+  text-shadow: var(--text-shadow);
 }
 
 .nine p {
   font-size: 2rem;
   font-weight: lighter;
+  color: var(--color-light);
+  text-shadow: var(--text-shadow);
 }
 
 /* Replay */
 #replay {
   cursor: pointer;
   z-index: 3;
+  color: var(--color-light);
+  text-shadow: var(--text-shadow);
 }
 
 /* Responsive */
