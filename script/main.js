@@ -1,13 +1,13 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: "Şarkıyı dinlemek istersen, 'Sen En İyisisin Anas' butonuna tıkla.",
+        title: "👉 Si ton cœur désire écouter la mélodie, il te suffit de cliquer sur le bouton « Tu es le plus merveilleux, Anas ».",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Sen En İyisisin Anas',
-        cancelButtonText: 'No',
+        confirmButtonText: 'Tu es le plus merveilleux, Anas',
+        cancelButtonText: 'Non!!!!!',
     }).then((result) => {
         if (result.isConfirmed) {
             document.querySelector('.song').play();

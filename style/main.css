@@ -34,7 +34,7 @@ html, body {
 .background-image {
   position: fixed;
   inset: 0;
-  background-image: url('../img/Screenshot 2025-06-08 162807.jpg');
+  background-image: url('../img/Screenshot\ 2025-06-08\ 162807.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
