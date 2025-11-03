@@ -1,12 +1,12 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: "👉 Si ton cœur désire écouter la mélodie, il te suffit de cliquer sur le bouton « Tu es le plus merveilleux, Anas ».",
+        title: "👉 Ila Bghety Tstamtei Qter clicker ela  « Zin Dyali, Anas 😅😅, U ila Mabitish clicker ela Nonn 😪 ».",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Tu es le plus merveilleux, Anas',
+        confirmButtonText: 'Zin Dyali, Anas',
         cancelButtonText: 'Non!!!!!',
     }).then((result) => {
         if (result.isConfirmed) {
